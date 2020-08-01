@@ -1,0 +1,8 @@
+<p>Você tem certeza que quer deletar a tarefa "{{item}}"?</p>
+
+<a href="{% url 'list' %}" >Cancelar</a>
+
+<form method="POST" action="">
+	{% csrf_token %}
+	<input type="submit" name="Confirm" value="Confirmar">
+</form>

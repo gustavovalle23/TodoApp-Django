@@ -1,0 +1,11 @@
+<h3>Atualizar Tarefa</h3>
+
+<form method="POST" action="">
+	{% csrf_token %}
+
+	<span>Título da tarefa{{' '}}</span>{{form.title}}
+	<span>Concluído</span>{{form.complete}}
+	<input type="submit" name="Update Task" value="Atualizar Tarefa" autocomplete="off">
+	
+	
+</form>
